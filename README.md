@@ -7,7 +7,9 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
   - [ELK Installation](https://github.com/russianrobot2021/ELK-stack-deployment/blob/main/Ansible/ELK-playbook.yml.yml) 
-  - 
+
+  - [Filebeat and Metricbeat installation](https://github.com/russianrobot2021/ELK-stack-deployment/blob/main/Ansible/Mericbeat-filebeat-playbook.yml.yml)
+  
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
