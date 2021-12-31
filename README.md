@@ -146,7 +146,6 @@ Web-2: 10.1.0.6
 DVWA-VM3: 10.1.0.7
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
 http://52.188.61.113:5601/app/kibana#/home/tutorial/dockerMetrics
 These Beats allow us to collect the following information from each machine:
 In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
@@ -160,13 +159,13 @@ SSH into the control node and follow the steps below:
 - Update the config file to include remore users and ports.
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+
 - _Which file is the playbook? Where do you copy it?_
+The playbook is istall-elk.yml, you copy it inside /etc/ansible
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+The file you update is the hosts file, you add the ip address of the machine you want to install filebeat or ELK on to the group listed in the host file. 
 - _Which URL do you navigate to in order to check that the ELK server is running?
-For ELK VM Configuration:
-Copy the ELK Installation and VM Configuration
-Run the playbook using this command : ansible-playbook /etc/ansible/install-elk.yml
+Go to http://ELK.VM.PUB.IP:5601/kibana
 
 For Filebeat
 Download Filebeat playbook usng this command:
